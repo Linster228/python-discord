@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body { 
+    font-family: 'Oswald', serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn button{
+ font-family: 'Oswald', serif;
+ padding: 8px;
+ background-color: #000;
+ color: #fff;
+ border: none;
+ border-radius: 45%;
+ font-size: 1em;
+ margin: 10px;
+}
+
+.btn button:hover{
+    background: rgb(79, 79, 79);
+    background-position: right;
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+    font-size: large;
+    padding: 10px;
+ }
+
+ nav{
+    text-align: right;
+}
+
+
+
+#home h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#home h2{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+}
+
+.rounded-button {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+}
+
+
+#bot h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#bot h2{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+}
+
+#bot img{
+    border-radius: 5%;
+    height: 200px;
+}
+
+#bot p{
+    display: block;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: Source Code Pro,monospace;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    font-size: .85rem;
+    color: #6c6c6c;
+    margin: 20px;
+}
+  
+#code{
+    height: 1200px;
+}
+
+#code h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#code h2{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+}
+
+#code p{
+    display: block;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: Source Code Pro,monospace;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    font-size: .85rem;
+    color: #6c6c6c;
+    margin: 20px;
+}
+
+.end {
+    background: #a6a6a6;
+    height: 180px;
+}
+
+.end h1{
+    font-weight: 100;
+    text-align: center;
+    color: black;
+}
+
+.end nav{
+    text-align: center;
+    color: black;
+}
+
+.end a{
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+ #home{
+     border: none;
+ }
+ #code{
+     border: none;
+ }
+ #bot{
+     border: none;
+ }
+
+img{
+    height: 400px;
+    width: 400px;
+}
+#code{
+    height: 1300px;
+}
+}
+
+@media only screen and (max-width: 385px){
+   #code{
+       height: 1800px;
+   }
+   .end {
+    background: #a6a6a6;
+    height: 180px;
+    width: 180px;
+}
+}

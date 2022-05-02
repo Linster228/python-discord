@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дискорд-Пайтон</title>
+    <link rel="stylesheet" href="light-mode.css" id="theme">
+</head>
+<body>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#bot">Создание-бота</a>
+        <a href="#code">Кодирование</a>
+    </nav>
+
+    <div class="btn">
+        <button id="switchMode">Переключить</button>
+    </div>
+<section id="home">
+    <h1>Как создать-бота в дискорде?</h1>
+    <br>
+    <h2>Для этого вы должны определиться, какого бота вы хотите создать фан-бота или модераторского бота.</h2>
+    <br>
+    <h2>Ютуб-канал автора:</h2>
+    
+    <center><a class="rounded-button" href="https://www.youtube.com/channel/UCWWoAeRn6j7AzlLphB2QnHw">    
+        <ion-icon name="logo-youtube" size="large"></ion-icon>
+    </a></center>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</section>
+
+<section id="bot">
+ <h1>Создание-бота</h1>
+ <h2>Что бы создать бота вы должны зайти в портал разроботчиков дискорда, потом заходите вкладку приложение (applications).</h2>
+ <h2>И создаете приложение (applications), но это ещё не всё.</h2>
+ <br>
+ <center><img src="./images/бот.PNG"></center>
+<h2>Потом заходите вкладку bot и нажмите там кнопку add bot.</h2>
+ <h2>Поздравляю вы создали бота!</h2>
+ <br>
+ <center><img src="./images/Бот 4.PNG"></center>
+ <br>
+ <h2>После того как вы создали бота, вы должны устонавить библиотеку дискорд пайтон, если вы используете программу visual studio code или pycharm то пишите в терминал.</h2>
+ <br>
+ <p>pip install discord.py</p>
+ <br>
+ <h2>Если вы используйте другую программу для кода, то открывайте командную строку пишите cd и ссылку на папку вы должны нажать сверху папки и вы получаете ссылку. Потом в командной строке установливаете библиотеку пайтон.</h2>
+ <br>
+ <center><img src="./images/Ж.PNG"></center>
+</section>
+
+<section id="code">
+<h1>Кодирование</h1>
+<h2>Создаем папку config.py (так будет удобнее писать код)</h2>
+<br>
+<p>token = "Токен вашего бота"
+    <br>
+   prefix = "Префикс вашего бота" 
+</p>
+<h2>После этого создаем папку bot.py и там пишем.</h2>
+<p>
+    import discord
+    <br>
+    from discord.ext import commands
+    <br>
+    from config import settings
+</p>
+<h2>Вам надо ещё подключить префикс бота в bot.py</h2>
+<p>bot = commands.Bot(command_prefix = settings["prefix"])</p>
+<h2>Потом в конце кода вы должны написать</h2>
+<p>bot.run("token")</p>
+<h2>Что бы запустить бота пишите:</h2>
+<p>@bot.event
+    <br>
+    async def on_ready():
+    <br>
+    print(------)
+    <br>
+    print(Бот в онлайне)
+    <br>
+    print(------)
+</p>
+<h2>Что бы у бота был статус пишите:</h2>
+<p>await bot.change_presence(activity=discord.Game(name="дискорд-пайтон"))</p>
+<h2>И наконец запуск бота что бы бот был в онлайне пишите:</h2>
+<p>#файл где находится бот py bot.py</p>
+</section>
+<div class="end">
+    <h1>Дискорд-Пайтон</h1>
+    <br><br>
+   <nav>
+       <a href="#home">Главная</a>
+       <a href="#bot">Создание-бота</a>
+       <a href="#code">Кодирование</a>
+   </nav>
+<script src="script.js"></script>
+</body>
+</html>

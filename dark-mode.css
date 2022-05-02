@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body { 
+    font-family: 'Oswald', serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn{
+    background-color: #000;
+}
+
+.btn button{
+    font-family: 'Oswald', serif;
+    padding: 8px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 45%;
+    font-size: 1em;
+    margin: 10px;
+}
+   
+   .btn button:hover{
+       background: rgb(133, 133, 133);
+       background-position: right;
+}
+
+
+a{
+    text-decoration:none ;
+    color: white;
+    font-size: large;
+    padding: 10px;
+ }
+
+ nav{
+    text-align: right;
+    background-color: #000;
+}
+
+#home{
+    background-color: #000;
+}
+
+#home h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+}
+
+#home h2{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.rounded-button {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+}
+
+#bot{
+    background-color: #000;
+}
+
+#bot h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+}
+
+#bot h2{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+#bot img{
+    border-radius: 5%;
+    height: 200px;
+    color: #fff;
+}
+
+#bot p{
+    display: block;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: Source Code Pro,monospace;
+    background-color: rgb(38, 38, 38);
+    border: 1px solid #343434;
+    font-size: .85rem;
+    color: #ffff;
+    margin: 20px;
+}
+  
+#code{
+    background-color: #000;
+    height: 1100px;
+}
+
+#code h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+}
+
+#code h2{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+#code p{
+    display: block;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: Source Code Pro,monospace;
+    background-color: rgb(38, 38, 38);
+    border: 1px solid #343434;
+    font-size: .85rem;
+    color: #ffff;
+    margin: 20px;
+}
+
+.end {
+    background: #a6a6a6;
+    height: 180px;
+}
+
+.end h1{
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+
+.end nav{
+    text-align: center;
+    color: white;
+    background: #a6a6a6;
+}
+
+
+.end a{
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    #home{
+        border: none;
+    }
+    #code{
+        border: none;
+    }
+    #bot{
+        border: none;
+    }
+   
+   img{
+       height: 400px;
+       width: 400px;
+   }
+   #code{
+       height: 1300px;
+   }
+}
+
